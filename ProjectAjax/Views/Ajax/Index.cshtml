@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div id="indexbody"></div>
+
+<script type="module">
+    
+    import {AjaxSyncPostJson} from "/js/Funcoes/Ajax.js"
+    AjaxSyncPostJson("/Ajax/AjaxPost",{A:"A",B:"B",C:"C",D:"D"},function(data){ console.log(data) },null,null);
+    
+</script>
